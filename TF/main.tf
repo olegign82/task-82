@@ -11,7 +11,7 @@ module "gke_cluster" {
   source          = "github.com/olegign82/tf-google-gke-cluster"
   GOOGLE_PROJECT  = var.GOOGLE_PROJECT
   GOOGLE_REGION   = var.GOOGLE_REGION
-  GKE_NUM_NODES   = 2
+  GKE_NUM_NODES   = 4
 }
 
 module "flux_bootstrap" {
